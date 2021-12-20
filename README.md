@@ -23,6 +23,7 @@ This webpage is intended for website administrator and election manager to use. 
 **//**
 This is an example of what the results page could look like once the elections are done and all the votes are counted. Each party stores a number of votes that they got, and every party and their votes, color & letter-initial is loaded dynamically.
 
-
+##
+Link to backend: https://github.com/rudasrudas/exam-election-backend
 ##
 Created by Justas Zdanavicius (just1531@stud.kea.dk), 20/12/2021
