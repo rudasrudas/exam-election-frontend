@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elections X</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../style.css" rel="stylesheet">
+    <link href="./editor.css" rel="stylesheet">
+    <script src="./editor.js"></script>
+</head>
+<body>
+    <div class="candidate-data overlay hidden">
+        <div class="overlay-content">
+            <span class="material-icons pointer">close</span>
+            <h3>Candidate info</h3>
+            <label for="">Name</label>
+            <input type="text" class="name">
+            <label for="">Surname</label>
+            <input type="text" class="surname">
+            <label for="">Party</label>
+            <select name="" class="party"></select>
+            <button class="primary" type="submit">Save candidate</button>
+        </div>
+    </div>
+    <header>
+        <div class="inner">
+            <p class="logo">Elections X</p>
+            <nav>
+                <a href="/" class="pointer">Candidates</a>
+                <a href="/editor" class="pointer active">Editor</a>
+                <a href="/results" class="pointer">Results</a>
+            </nav>
+        </div>
+        <div class="after-header"></div>
+    </header>
+    <div class="content">
+        <!-- New candidate -->
+        <h3>Candidate editor</h3>
+        <button class="primary add-new">Add new</button>
+
+        <!-- Existing candidates -->
+        <table class="candidate-list">
+            <tbody>
+                <tr>
+                    <th>Loading...</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

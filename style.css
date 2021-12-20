@@ -1,0 +1,120 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* overflow-x: hidden; */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: #f0f0f0;
+}
+
+/* BUTTONS */
+
+button {
+    width: fit-content;
+    padding: 5px 25px;
+    background: rgb(208, 226, 45);
+    color: rgb(248, 248, 241);
+    font-size: 24px;
+    border-radius: 3px;
+    border: solid 2px #5533a3;
+    margin: 5px 10px;
+}
+
+button.primary {
+    background: #694cac;
+}
+
+button.primary:hover {
+    background: linear-gradient(#694cac, #5533a3);
+    color: rgb(255, 255, 255);
+}
+
+button.primary:active {
+    background: linear-gradient(#5533a3, #694cac);
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #bdabe6;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+header > .inner {
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background: linear-gradient(178deg, #5533a3, #9840bb 50%);
+}
+
+.after-header {
+    content: "Hello";
+    height: 15px;
+    background: linear-gradient(#3b3b3b4b, #ffffff00);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+    font-size: 18px;
+}
+
+nav > .active {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 3px;
+}
+
+.content {
+    max-width: 1000px;
+    width: auto;  
+    margin-left: auto; 
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background: #fff;
+    height: auto;
+    min-height: 92vh;
+    margin-top: -20px;
+    padding: 10px;
+}
+
+.content > h3 {
+    margin: 30px 10px 10px;
+}
