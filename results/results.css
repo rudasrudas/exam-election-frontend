@@ -41,22 +41,3 @@
     max-width: 50px;
     font-size: 14px;
 }
-
-.subtext {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    align-self: center;
-    color: gray;
-    font-size: 10px;
-    justify-content: flex-end;
-    text-align: center;
-}
-
-.subtext a {
-    color: #5533a3;
-}
-
-.subtext a:hover {
-    color: #694cac;
-}

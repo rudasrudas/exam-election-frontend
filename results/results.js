@@ -8,8 +8,13 @@ function initResults() {
     fetch("https://electionx-backend.herokuapp.com/parties")
     .then(response => response.json())
     .then(parties => {
+
+        //Remove anything there was before in the results div
+        while(resultElement.children.length) resultElement.removeChild(resultElement.firstChild);
+
         //Sort so it looks nicer
         parties.sort(getSortOrder("votes"));
+
         //Find highest votes
         let max = 0;
         parties.forEach(party => {

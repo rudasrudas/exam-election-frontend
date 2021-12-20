@@ -31,6 +31,11 @@ th button {
     opacity: 1;
 }
 
+th button.remove {
+    background: rgb(219, 37, 37);
+    border: solid 2px rgb(143, 6, 6);
+}
+
 tbody tr:not(:hover) th button {
     opacity: 0.1;
 }

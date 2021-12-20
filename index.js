@@ -43,10 +43,7 @@ function selectParty(partyElement){
 function findCandidates(partyId){
     const candidateWrapperElement = document.querySelector(".candidate-list");
 
-    // Remove all candidate elements
-    while(candidateWrapperElement.children.length > 0)
-    candidateWrapperElement.removeChild(candidateWrapperElement.firstChild);
-
+    
     let url = "https://electionx-backend.herokuapp.com/candidates"
     if(partyId != null)
         url += "/party/" + partyId;
@@ -54,6 +51,10 @@ function findCandidates(partyId){
     fetch(url)
     .then(response => response.json())
     .then(candidates => {
+        // Remove all candidate elements
+        while(candidateWrapperElement.children.length > 0)
+            candidateWrapperElement.removeChild(candidateWrapperElement.firstChild);
+
         // Create new elements
         candidates.forEach(candidate => {
             const candidateElement = document.createElement("div");
@@ -62,7 +63,14 @@ function findCandidates(partyId){
                                         "<p class='name'>" + candidate.name + " " + candidate.surname + "</p>" +
                                         "<div><p class='party-header'>Party</p><p class='party-title'>" + candidate.party.title + "</p></div>";
             candidateElement.querySelector(".initial").style.background = "#" + candidate.party.color;
+            candidateElement.querySelector("img").src = "https://picsum.photos/seed/" + candidate.id + candidate.surname + candidate.name + "/300/300";
             candidateWrapperElement.appendChild(candidateElement);
+
+            // fetch("https://this-person-does-not-exist.com/en?new")
+            // .then(response => response.json())
+            // .then(face => {
+            //     candidateElement.querySelector("img").src = "https://this-person-does-not-exist.com/" + face.name;
+            // })
         });
     });
 }

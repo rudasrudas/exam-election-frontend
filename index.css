@@ -53,10 +53,11 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin-bottom: 100px;
+    width: 100%;
 }
 
 .candidate {
-    width: 30%;
+    width: 31%;
     height: 350px;
     display: flex;
     flex-direction: column;
@@ -73,6 +74,12 @@
     width: 100%;
     border-radius: 1000px;
     border: solid 2px #dbdbdb;
+    padding: 10px;
+}
+
+.candidate:hover img {
+    padding: 0px;
+    animation: img-anim 0.5s;
 }
 
 .candidate .name {
@@ -116,6 +123,34 @@
     font-weight: bold;
     font-size: 36px;
     position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+
+.candidate:hover .initial {
     right: 10px;
     bottom: 10px;
+    animation: initial-anim 0.5s;
+}
+
+@keyframes initial-anim {
+    0% {
+        right: 5px;
+        bottom: 10px;
+    }
+
+    100% {
+        right: 10px;
+        bottom: 10px;
+    }
+}
+
+@keyframes img-anim {
+    0% {
+        padding: 10px;
+    }
+
+    100% {
+        padding: 0px;
+    }
 }

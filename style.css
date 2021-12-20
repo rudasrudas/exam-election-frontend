@@ -118,3 +118,30 @@ nav > .active {
 .content > h3 {
     margin: 30px 10px 10px;
 }
+
+footer {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-self: center;
+    color: gray;
+    font-size: 10px;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+footer a {
+    color: #5533a3;
+}
+
+footer a:hover {
+    color: #694cac;
+}
+
+.bold {
+    font-size: bold;
+}
+
+.offset-10 {
+    margin: 10px;
+}
