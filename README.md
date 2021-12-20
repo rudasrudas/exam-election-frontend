@@ -17,7 +17,6 @@ This webpage is used to get an overview of all the candidates partaking in the e
 **Editor page**
 **//**
 This webpage is intended for website administrator and election manager to use. They are able to add a new candidate, update existing candidate's name, surname and their party, or just remove the candidate from the election.
-I have not implemented any security in the page, because in terms of frontend, apart from setting and getting keys from the local or session storage, it is practically the same as creating/editing candidate info and wouldn't showcase any additional skillsets.
 
 
 **Results page**
